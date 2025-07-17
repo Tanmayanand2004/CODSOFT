@@ -72,7 +72,7 @@ An AI-powered application for detecting and recognizing human faces in real-time
 I'm an aspiring AI developer, passionate about crafting smart, user-friendly applications that blend artificial intelligence with everyday use cases.  
 This internship gave me hands-on exposure to building practical AI tools from scratch.
 
-📬 **Email:** tanmaysri04@gmail.com 
+📬 **Email:** tanmaysri04@gmail.com   
 🌐 **LinkedIn:** [Check Out!](https://www.linkedin.com/in/your-linkedin-profile/)  
 🐙 **GitHub:** [@Tanmayanand](https://github.com/Tanmayanand2004)
 
