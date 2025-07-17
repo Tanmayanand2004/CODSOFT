@@ -74,7 +74,7 @@ This internship gave me hands-on exposure to building practical AI tools from sc
 
 📬 **Email:** tanmaysri04@gmail.com 
 🌐 **LinkedIn:** [Check Out!](https://www.linkedin.com/in/your-linkedin-profile/)  
-🐙 **GitHub:** [@Eren-Sama]([https://github.com/Tanmayanand2004])
+🐙 **GitHub:** [@Tanmayanand](https://github.com/Tanmayanand2004)
 
 ---
 
