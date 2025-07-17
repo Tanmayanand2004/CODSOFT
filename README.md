@@ -77,7 +77,3 @@ This internship gave me hands-on exposure to building practical AI tools from sc
 🐙 **GitHub:** [@Tanmayanand](https://github.com/Tanmayanand2004)
 
 ---
-
-## ✨ Final Thoughts
-
-> **"AI is not here to replace humans, but to empower them."**
