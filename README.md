@@ -22,7 +22,7 @@ I'm currently pursuing a remote **Artificial Intelligence Internship** at **[Cod
 - 🌐 Built with a modern web UI (including dark/light mode toggle).
 - 🧠 Uses pattern matching, entity recognition, and basic NLP flows.
 
-🔗 [Explore Kai Web Chatbot](./Kai)
+🔗 [Explore Kai Web Chatbot](https://github.com/Tanmayanand2004/CODSOFT/tree/main/Kai)
 
 ---
 
