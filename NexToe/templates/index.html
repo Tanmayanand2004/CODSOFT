@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexToe - Tic Tac Toe</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="theme-toggle">
+        <button id="theme-btn" class="theme-btn">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+
+    <div class="container">
+        <header class="game-header">
+            <h1 class="game-title">
+                <span class="nex">Nex</span><span class="toe">Toe</span>
+            </h1>
+            <p class="game-subtitle">Challenge the Unbeatable AI</p>
+        </header>
+
+        <div class="game-controls">
+            <div class="player-selection">
+                <label for="player-choice">Choose Your Symbol:</label>
+                <div class="symbol-buttons">
+                    <button class="symbol-btn active" data-symbol="X">
+                        <i class="fas fa-times"></i> X
+                    </button>
+                    <button class="symbol-btn" data-symbol="O">
+                        <i class="far fa-circle"></i> O
+                    </button>
+                </div>
+            </div>
+            
+            <div class="difficulty-selection">
+                <label for="difficulty">AI Difficulty:</label>
+                <select id="difficulty" class="difficulty-select">
+                    <option value="impossible">Impossible</option>
+                    <option value="hard">Hard</option>
+                    <option value="medium">Medium</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="game-info">
+            <div class="score-board">
+                <div class="score-item win-score">
+                    <span class="score-label">Wins</span>
+                    <span class="score-value" id="player-score">0</span>
+                </div>
+                <div class="score-item draw-score">
+                    <span class="score-label">Draws</span>
+                    <span class="score-value" id="draw-score">0</span>
+                </div>
+                <div class="score-item lose-score">
+                    <span class="score-label">Losses</span>
+                    <span class="score-value" id="ai-score">0</span>
+                </div>
+            </div>
+            
+            <div class="turn-indicator">
+                <span id="turn-text">Your Turn</span>
+                <div class="turn-loader" id="turn-loader"></div>
+            </div>
+        </div>
+
+        <div class="game-status" id="game-status">
+            <div class="status-message" id="status-message">Click a cell to start playing!</div>
+        </div>
+
+        <div class="game-board-container">
+            <div class="game-board" id="game-board">
+                <div class="cell" data-index="0"></div>
+                <div class="cell" data-index="1"></div>
+                <div class="cell" data-index="2"></div>
+                <div class="cell" data-index="3"></div>
+                <div class="cell" data-index="4"></div>
+                <div class="cell" data-index="5"></div>
+                <div class="cell" data-index="6"></div>
+                <div class="cell" data-index="7"></div>
+                <div class="cell" data-index="8"></div>
+            </div>
+            <div class="winning-line" id="winning-line"></div>
+        </div>
+
+        <div class="game-actions">
+            <button class="btn btn-primary" id="new-game-btn">
+                <i class="fas fa-redo"></i> New Game
+            </button>
+        </div>
+    </div>
+
+    <!-- Game Result Modal -->
+    <div class="modal" id="result-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="result-title">Game Over</h2>
+                <button class="close-btn" id="close-modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="result-icon" id="result-icon"></div>
+                <p id="result-message">Great game!</p>
+                <div class="modal-actions">
+                    <button class="btn btn-primary" id="play-again-btn">
+                        <i class="fas fa-play"></i> Play Again
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loading-overlay">
+        <div class="loading-spinner"></div>
+        <p>AI is thinking...</p>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
